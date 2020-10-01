@@ -14,7 +14,7 @@ def print_sleep(message):
 def restart_game():
     if "sword" in items:
         items.remove("sword")
-    print_sleep("GAME OVER\n")
+    print_sleep("GAME OVER FOR YOU\n")
     response = input("Would you like to play again? (y/n)")
     print_sleep("\n")
     if response == 'y':
