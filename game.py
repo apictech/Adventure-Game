@@ -1,7 +1,7 @@
 import time
 import random
 
-enemy = ["wicked fairie", "troll", "gorgon", "dragon"]
+enemy = ["wicked fairie", "troll", "gorgon", "monster"]
 demon = random.choice(enemy)
 items = []
 
@@ -26,7 +26,7 @@ def restart_game():
 
 
 def intro():
-    print_sleep("You find yourself standing in an open field, "
+    print_sleep("You find yourself standing in an open area, "
                 "filled with grass and yellow wildflowers.")
     print_sleep(f"Rumor has it that a {demon} is somewhere around here, "
                 "and has been terrifying the nearby village.")
@@ -90,7 +90,7 @@ def house():
 def cave():
     # Things that happen to the player goes in the cave
     if "sword" in items:
-        print_sleep("You peer cautiously into the cave.")
+        print_sleep("You peer cautiously into the cave.Cave is full of darkness")
         print_sleep("You've been here before, and gotten all "
                     "the good stuff. It's just an empty cave now.")
         print_sleep("You walk back out to the field.")
